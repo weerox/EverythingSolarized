@@ -146,8 +146,7 @@
 		// TABS
 		{
 			"class": "tabset_control",
-			"layer0.tint": "var(base2)",
-			"color": "red"
+			"layer0.tint": "var(base2)"
 		},
 		{
 			"class": "tab_control",
