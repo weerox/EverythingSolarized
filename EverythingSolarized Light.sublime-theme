@@ -234,6 +234,34 @@
 			"class": "scroll_corner_control",
 			"layer1.tint": "var(base2)",
 			"layer1.opacity": 1
+		},
+		// STATUS BAR
+		{
+			"class": "status_bar",
+			"layer0.tint": "var(base2)"
+		},
+		{
+			"class": "label_control",
+			"parents": [{"class": "status_bar"}],
+			"color": "var(base01)"
+		},
+		{
+			"class": "sidebar_button_control",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "sidebar_button_control",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "vcs_branch_icon",
+			"layer0.tint": "var(base1)"
+		},
+		{
+			"class": "vcs_changes_annotation",
+			"border_color": "var(base1)"
 		}
 	]
 }
