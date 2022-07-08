@@ -223,6 +223,17 @@
 			"class": "show_tabs_dropdown_button",
 			"attributes": ["hover"],
 			"layer0.tint": "var(base01)"
+		},
+		// SCROLL BAR
+		{
+			"class": "scroll_bar_control",
+			"layer1.tint": "var(base2)",
+			"layer1.opacity": 1
+		},
+		{
+			"class": "scroll_corner_control",
+			"layer1.tint": "var(base2)",
+			"layer1.opacity": 1
 		}
 	]
 }
