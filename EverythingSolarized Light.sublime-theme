@@ -67,6 +67,37 @@
 			"class": "close_button",
 			"attributes": ["hover"],
 			"layer0.tint": "var(base01)"
+		},
+		// FOLDER AND FILE ICONS
+		{
+			"class": "disclosure_button_control",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "disclosure_button_control",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_folder",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_folder_loading",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_folder_dup",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_file_type",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
 		}
 	]
 }
