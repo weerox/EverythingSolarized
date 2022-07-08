@@ -41,6 +41,32 @@
 		{
 			"class": "sidebar_label",
 			"color": "var(base00)",
+		},
+		// OPEN FILES CLOSE BUTTON
+		{
+			"class": "close_button",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "close_button",
+			"attributes": ["added"],
+			"layer0.tint": "var(green)"
+		},
+		{
+			"class": "close_button",
+			"attributes": ["modified"],
+			"layer0.tint": "var(base1)"
+		},
+		{
+			"class": "close_button",
+			"attributes": ["deleted"],
+			"layer0.tint": "var(red)"
+		},
+		{
+			"class": "close_button",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
 		}
 	]
 }
