@@ -52,13 +52,22 @@
 		{
 			"class": "button_control",
 			"attributes": ["confirm"],
-			"layer2.opacity": { "target": 0.5, "speed": 2.0, "interpolation": "smoothstep" }
+			"layer2.opacity": 0.9
 		},
 		{
 			"class": "button_control",
 			"attributes": ["disabled"],
 			"layer3.tint": "blue",
 			"layer3.opacity": 1
+		},
+		// This is supposed to change the text color of a "confirm" button,
+		// but it is overriden by the "expand/collapse all" style below,
+		// so it is restated there.
+		{
+			"class": "label_control",
+			"parents": [{"class": "button_control", "attributes": ["confirm"]}],
+			"color": "var(base3)",
+			"shadow_offset": [0, 0]
 		},
 		// TABS
 		{
