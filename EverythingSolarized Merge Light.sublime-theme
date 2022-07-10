@@ -41,6 +41,7 @@
 		},
 		{
 			"class": "commit_edges_control",
+			"num_colors": 8,
 			// I initially wanted to have the colors
 			// arranged such that those with a lower hue
 			// in CIELCh comes first and higher hues is last.
