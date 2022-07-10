@@ -39,6 +39,13 @@
 			"class": "side_bar_container",
 			"layer0.tint": "var(base3)"
 		},
+		// COMMITS
+		{
+			"class": "commit_summary_control",
+			"parents": [{"class": "commit_table_row", "attributes": ["selected"]}],
+			"layer0.tint": "var(base2)",
+			"layer0.opacity": 1
+		},
 		{
 			"class": "commit_edges_control",
 			"num_colors": 8,
@@ -56,6 +63,141 @@
 			"color5": "var(green)",
 			"color6": "var(blue)",
 			"color7": "var(magenta)"
+		},
+		{
+			"class": "index_files_label",
+			"color": "var(base00)"
+		},
+		{
+			"class": "index_action_label",
+			"color": "var(base1)"
+		},
+		{
+			"class": "message_label",
+			"color": "var(base00)"
+		},
+		{
+			"class": "author_label",
+			"color": "var(base1)"
+		},
+		{
+			"class": "time_label",
+			"color": "var(base1)"
+		},
+		// TODO commit_file_name_label and commit_file_path_label.
+		// I don't know how to display these, so I won't style them.
+		{
+			"class": "commit_annotations",
+			// This is the same number as in commit_edges_control.
+			"num_unique_columns": 8
+		},
+		{
+			"class": "commit_annotation",
+			"color": "var(base1)",
+			"background_color": "var(base2)"
+		},
+		{
+			"class": "commit_annotation",
+			"parents": [{"class": "commit_table_row", "attributes": ["selected"]}],
+			"background_color": "var(base3)"
+		},
+		// Each column_# matches the color in commit_edges_control, but this is 1-indexed
+		// and commit_edges_control is 0-indexed...
+		// The default style also sets a general style, which is not present here.
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_1"]}],
+			"border_color": "var(red)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_2"]}],
+			"border_color": "var(yellow)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_3"]}],
+			"border_color": "var(cyan)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_4"]}],
+			"border_color": "var(violet)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_5"]}],
+			"border_color": "var(orange)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_6"]}],
+			"border_color": "var(green)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_7"]}],
+			"border_color": "var(blue)"
+		},
+		{
+			"class": "commit_annotation bordered",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
+			"border_color": "var(magenta)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"color": "var(base3)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_1"]}],
+			"background_color": "var(red)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_2"]}],
+			"background_color": "var(yellow)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_3"]}],
+			"background_color": "var(cyan)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_4"]}],
+			"background_color": "var(violet)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_5"]}],
+			"background_color": "var(orange)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_6"]}],
+			"background_color": "var(green)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_7"]}],
+			"background_color": "var(blue)"
+		},
+		{
+			"class": "commit_annotation branch head",
+			"parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
+			"background_color": "var(magenta)"
+		},
+		// file_annotation has same style as commit_annotation.
+		{
+			"class": "file_annotation",
+			"color": "var(base1)",
+			"background_color": "var(base2)"
+		},
+		{
+			"class": "file_annotation",
+			"parents": [{"class": "commit_table_row", "attributes": ["selected"]}],
+			"background_color": "var(base3)"
 		}
 	]
 }
