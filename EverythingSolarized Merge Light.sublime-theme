@@ -19,6 +19,21 @@
 		"green":   "#859900"
 	},
 	"rules": [
+		// TABS
+		{
+			"class": "tab",
+			"attributes": ["selected"],
+			"layer0.tint": "var(base3)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "side_bar_tabs",
+			"layer0.tint": "var(base2)"
+		},
+		{
+			"class": "details_tab_bar",
+			"layer0.tint": "var(base2)"
+		},
 		{
 			"class": "commit_edges_control",
 			// I initially wanted to have the colors
