@@ -34,6 +34,11 @@
 			"class": "details_tab_bar",
 			"layer0.tint": "var(base2)"
 		},
+		// SIDE BAR (LOCATION, COMMITS, FILES)
+		{
+			"class": "side_bar_container",
+			"layer0.tint": "var(base3)"
+		},
 		{
 			"class": "commit_edges_control",
 			// I initially wanted to have the colors
