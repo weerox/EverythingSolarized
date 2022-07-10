@@ -19,6 +19,47 @@
 		"green":   "#859900"
 	},
 	"rules": [
+		// GENERAL
+		{
+			"class": "label_control",
+			"color": "var(base00)",
+			"opacity": 1
+		},
+		// The default theme use layer1 for the default/hover/pressed color
+		// and layer2 for the "dangerous" color.
+		// Here, we use layer0 for the default color,
+		// layer1 for hover/pressed and
+		// layer2 for the dangerous color.
+		{
+			"class": "button_control",
+			"layer0.tint": "var(base2)",
+			"layer0.opacity": 1,
+			"layer1.tint": "var(base3)",
+			"layer1.opacity": 0,
+			"layer2.tint": "var(red)",
+			"layer2.opacity": 0
+		},
+		{
+			"class": "button_control",
+			"attributes": ["hover"],
+			"layer1.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" }
+		},
+		{
+			"class": "button_control",
+			"attributes": ["pressed"],
+			"layer1.opacity": 1
+		},
+		{
+			"class": "button_control",
+			"attributes": ["confirm"],
+			"layer2.opacity": { "target": 0.5, "speed": 2.0, "interpolation": "smoothstep" }
+		},
+		{
+			"class": "button_control",
+			"attributes": ["disabled"],
+			"layer3.tint": "blue",
+			"layer3.opacity": 1
+		},
 		// TABS
 		{
 			"class": "tab",
