@@ -248,6 +248,102 @@
 			"class": "file_annotation",
 			"parents": [{"class": "commit_table_row", "attributes": ["selected"]}],
 			"background_color": "var(base3)"
+		},
+		// COMMIT VIEW
+		{
+			"class": "details_panel",
+			"layer0.tint": "var(base3)"
+		},
+		{
+			"class": "field_name_label",
+			"color": "var(base1)"
+		},
+		// These annotation styles is taken from the Solarized Color Scheme by braver
+		// so it matches the style in the actual diff.
+		{
+			"class": "deleted_annotation",
+			"background_color": "color(var(red) a(0.1))",
+			"color": "color(var(base00) l(- 5%))"
+		},
+		{
+			"class": "inserted_annotation",
+			"background_color": "color(var(green) a(0.1))",
+			"color": "color(var(base00) l(- 5%))"
+		},
+		// File headers
+		{
+			"class": "file_diff_header",
+			"layer0.tint": "var(base2)"
+		},
+		// NOTE The disclosure_button_control is styled by
+		// the location menu.
+		// This also styles the text in the "Discard/Stage all" buttons,
+		// which isn't how the default theme works, but I thought it
+		// created a nice visual distinction between staging single files and all files.
+		{
+			"class": "label_control",
+			"parents": [{"class": "expand_all_diff_control"}],
+			"color": "var(base1)"
+		},
+		// Since the above also styles the buttons, we have to reset
+		// the text color when the button is in "confirm" state.
+		{
+			"class": "label_control",
+			"parents": [
+				{"class": "expand_all_diff_control"},
+				{"class": "button_control", "attributes": ["confirm"]}
+			],
+			"color": "var(base3)"
+		},
+		{
+			"class": "eliding_label_control",
+			"color": "var(base01)"
+		},
+		// Remove some styling that the default theme use to fake borders.
+		{
+			"class": "button_control all_button",
+			"layer0.inner_margin": null,
+			"layer0.texture": null
+		},
+		// Invert the button colors when they are on a base2 background.
+		// NOTE We can't set the color of the "..." icon.
+		{
+			"class": "button_control",
+			"parents": [
+				{"class": "file_diff_header"},
+			],
+			"layer0.tint": "var(base3)",
+			"layer1.tint": "var(base2)"
+		},
+		// Hunk headers
+		{
+			"class": "file_diff_hunk_header",
+			"layer0.tint": "var(base3)"
+		},
+		// Get the hunk button behaviour from the default theme.
+		// It is implemented a bit differently, but the behaviour is more or less the same.
+		{
+			"class": "hunk_button",
+			"parents":
+			[
+				{"class": "file_diff_hunk_container", "attributes": ["!hover"]},
+				{"class": "file_diff_hunk_header", "attributes": ["!selected"]}
+			],
+			"layer0.opacity": 0
+		},
+		{
+			"class": "label_control",
+			"parents":
+			[
+				{"class": "file_diff_hunk_container", "attributes": ["!hover"]},
+				{"class": "file_diff_hunk_header", "attributes": ["!selected"]},
+				{"class": "hunk_button"}
+			],
+			"opacity": 0
+		},
+		{
+			"class": "terminator",
+			"layer0.tint": "var(base2)"
 		}
 	]
 }
