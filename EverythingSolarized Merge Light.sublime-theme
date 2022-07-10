@@ -19,5 +19,22 @@
 		"green":   "#859900"
 	},
 	"rules": [
+		{
+			"class": "commit_edges_control",
+			// I initially wanted to have the colors
+			// arranged such that those with a lower hue
+			// in CIELCh comes first and higher hues is last.
+			// The problem is that some edges will look visually indistinguishable.
+			// Instead, I decided to jump every other color, so it makes "two laps"
+			// around the hue values.
+			"color0": "var(red)",
+			"color1": "var(yellow)",
+			"color2": "var(cyan)",
+			"color3": "var(violet)",
+			"color4": "var(orange)",
+			"color5": "var(green)",
+			"color6": "var(blue)",
+			"color7": "var(magenta)"
+		}
 	]
 }
