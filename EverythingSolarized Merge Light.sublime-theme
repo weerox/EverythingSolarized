@@ -84,15 +84,11 @@
 		// TODO Should the hover attribute be changed to the parent hover?
 		// When a button is large, the icon won't switch if the mouse is
 		// outside the icon, but inside the button.
+		// The icon_folder doesn't need a hover style.
 		{
 			"class": "icon_folder",
 			"layer0.tint": "var(base1)",
 			"layer0.opacity": 1
-		},
-		{
-			"class": "icon_folder",
-			"attributes": ["hover"],
-			"layer0.tint": "var(base01)"
 		},
 		{
 			"class": "icon_location_bar",
@@ -339,7 +335,66 @@
 			"class": "search_text_control",
 			"layer0.tint": "var(base3)"
 		},
-		// TABS
+		// REPOSITORY TABS
+		{
+			"class": "root_tabs",
+			"layer0.tint": "var(base2)"
+		},
+		{
+			"class": "tab_control",
+			"layer0.tint": "var(base2)",
+			"layer0.opacity": 1,
+			"layer1.opacity": 0
+		},
+		{
+			"class": "tab_control",
+			"attributes": ["selected"],
+			"layer0.tint": "var(base3)"
+		},
+		{
+			"class": "tab_label",
+			"color": "var(base00)",
+			"opacity": 1
+		},
+		{
+			"class": "tab_close_button",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "new_tab_button",
+			"layer0.opacity": 0,
+			"layer1.opacity": 0,
+			"layer2.opacity": 0,
+			"layer3.opacity": 0
+		},
+		{
+			"class": "new_tab_icon",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "new_tab_icon",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)",
+		},
+		{
+			"class": "tab_select_dropdown_icon",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "tab_select_dropdown_icon",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)",
+		},
+		// OTHER TABS
 		{
 			"class": "tab",
 			"attributes": ["selected"],
