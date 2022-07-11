@@ -69,6 +69,17 @@
 			"color": "var(base3)",
 			"shadow_offset": [0, 0]
 		},
+		{
+			"class": "disclosure_button_control",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "disclosure_button_control",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)",
+			"layer0.opacity": 1
+		},
 		// TABS
 		{
 			"class": "tab",
@@ -275,8 +286,7 @@
 			"class": "file_diff_header",
 			"layer0.tint": "var(base2)"
 		},
-		// NOTE The disclosure_button_control is styled by
-		// the location menu.
+		// NOTE The disclosure_button_control is styled in the general section.
 		// This also styles the text in the "Discard/Stage all" buttons,
 		// which isn't how the default theme works, but I thought it
 		// created a nice visual distinction between staging single files and all files.
