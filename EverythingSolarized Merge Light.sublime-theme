@@ -354,6 +354,29 @@
 		{
 			"class": "terminator",
 			"layer0.tint": "var(base2)"
+		},
+		// TREE VIEW
+		// The default theme will set 100% opacity
+		// when hovering over row or if it is selected.
+		{
+			"class": "location_bar_row",
+			"layer0.tint": "var(base2)"
+		},
+		{
+			"class": "location_bar_heading",
+			"color": "var(base01)"
+		},
+		{
+			"class": "location_bar_label",
+			"color": "var(base00)"
+		},
+		// Override the default button_control to make
+		// the background of the "eye" button transparent.
+		// The actual icons are styled with the other icons.
+		{
+			"class": "button_control icon_button transparent",
+			"layer0.opacity": 0,
+			"layer1.opacity": 0
 		}
 	]
 }
