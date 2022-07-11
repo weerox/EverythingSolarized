@@ -296,6 +296,14 @@
 			"layer1.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" }
 		},
 		{
+			"class": "progress_bar_control",
+			"layer0.tint": "var(base2)",
+		},
+		{
+			"class": "progress_gauge_control",
+			"layer0.tint": "var(base1)",
+		},
+		{
 			"class": "git_output_button",
 			"layer0.tint": "var(base1)",
 			"layer0.opacity": 1,
