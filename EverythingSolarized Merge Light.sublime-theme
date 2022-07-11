@@ -80,6 +80,207 @@
 			"layer0.tint": "var(base01)",
 			"layer0.opacity": 1
 		},
+		// ICONS
+		// TODO Should the hover attribute be changed to the parent hover?
+		// When a button is large, the icon won't switch if the mouse is
+		// outside the icon, but inside the button.
+		{
+			"class": "icon_folder",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_folder",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_location_bar",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_location_bar",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_side_bar",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_side_bar",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_back",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_back",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_forward",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_forward",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_stash",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_stash",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_pop_stash",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_pop_stash",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_search",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_search",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_more",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_more",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_pull",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_pull",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_push",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_push",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_options_dropdown",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_options_dropdown",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_cancel",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_cancel",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_visible",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_visible",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		// This icon is a bit special, because it has a 'slash' on layer1.
+		{
+			"class": "icon_hidden",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1,
+			"layer1.tint": "var(red)",
+			"layer1.opacity": 1
+		},
+		{
+			"class": "icon_hidden",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_uninitialized_submodule",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_uninitialized_submodule",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		{
+			"class": "icon_section_actions",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_section_actions",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		// TODO Style icon_ahead, icon_behind.
+		// layer0 is the inside and layer1 is the outline.
+		{
+			"class": "icon_filter",
+			"layer0.opacity": 0,
+			"layer1.tint": "var(base1)",
+			"layer1.opacity": 1
+		},
+		{
+			"class": "icon_filter",
+			"attributes": ["hover"],
+			"layer1.tint": "var(base01)"
+		},
+		{
+			"class": "icon_dropdown_button",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_dropdown_button",
+			"attributes": ["hover"],
+			"layer0.tint": "var(base01)"
+		},
+		// TODO Style the icons for the file_icon.
 		// TABS
 		{
 			"class": "tab",
@@ -316,7 +517,7 @@
 			"layer0.texture": null
 		},
 		// Invert the button colors when they are on a base2 background.
-		// NOTE We can't set the color of the "..." icon.
+		// NOTE The color of the '...' (more) button is set by icon_more.
 		{
 			"class": "button_control",
 			"parents": [
