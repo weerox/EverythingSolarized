@@ -677,7 +677,7 @@
 			"class": "terminator",
 			"layer0.tint": "var(base2)"
 		},
-		// TREE VIEW
+		// LOCATION BAR
 		// The default theme will set 100% opacity
 		// when hovering over row or if it is selected.
 		{
