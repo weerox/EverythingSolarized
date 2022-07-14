@@ -253,7 +253,17 @@
 			"attributes": ["hover"],
 			"layer0.tint": "var(base01)"
 		},
-		// TODO Style icon_ahead, icon_behind.
+		// We don't need hover styles for 'ahead' and 'behind'.
+		{
+			"class": "icon_ahead",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "icon_behind",
+			"layer0.tint": "var(base1)",
+			"layer0.opacity": 1
+		},
 		// layer0 is the inside and layer1 is the outline.
 		{
 			"class": "icon_filter",
@@ -710,6 +720,24 @@
 			"class": "icon_section_actions",
 			"parents": [{"class": "side_bar_container", "attributes": ["!hover"]}],
 			"layer0.opacity": 0
+		},
+		// The icon_ahead and icon_behind is styled with the other icons.
+		// The branch_stat is styled like a button_control.
+		{
+			"class": "branch_stat",
+			"layer0.tint": "var(base2)",
+			"layer0.opacity": 1,
+			"layer1.tint": "var(base3)",
+			"layer1.opacity": 0
+		},
+		{
+			"class": "branch_stat",
+			"attributes": ["hover"],
+			"layer1.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" }
+		},
+		{
+			"class": "branch_stat_label",
+			"color": "var(base1)"
 		}
 	]
 }
