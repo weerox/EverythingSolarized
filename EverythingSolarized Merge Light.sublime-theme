@@ -699,6 +699,17 @@
 			"class": "button_control icon_button transparent",
 			"layer0.opacity": 0,
 			"layer1.opacity": 0
+		},
+		// Hide these icons if the location bar is not hovered.
+		{
+			"class": "icon_visible",
+			"parents": [{"class": "side_bar_container", "attributes": ["!hover"]}],
+			"layer0.opacity": 0
+		},
+		{
+			"class": "icon_section_actions",
+			"parents": [{"class": "side_bar_container", "attributes": ["!hover"]}],
+			"layer0.opacity": 0
 		}
 	]
 }
