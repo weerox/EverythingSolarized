@@ -581,7 +581,24 @@
 			"parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
 			"background_color": "var(magenta)"
 		},
-		// file_annotation has same style as commit_annotation.
+		// condensed_branch_annotation and file_annotation has same style as commit_annotation.
+		{
+			"class": "condensed_branch_annotation_container",
+			"background_color": "var(base2)"
+		},
+		{
+			"class": "condensed_branch_annotation_container",
+			"parents": [{"class": "commit_table_row", "attributes": ["selected"]}],
+			"background_color": "var(base3)"
+		},
+		{
+			"class": "condensed_branch_annotation",
+			"color": "var(base1)"
+		},
+		{
+			"class": "condensed_branch_icon",
+			"layer0.tint": "var(base1)"
+		},
 		{
 			"class": "file_annotation",
 			"color": "var(base1)",
